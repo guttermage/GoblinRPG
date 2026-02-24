@@ -6,6 +6,7 @@
 #include <cstdlib>
 #include <ctime>
 
+// Structs
 struct Items {
     std::string name;
     std::string description;
@@ -39,10 +40,9 @@ o888    88  o888   888o 888    888 888         888   8888o  88        888    888
     system("cls");
 
     std::cout << "Welcome, initiate. State thy name: \n \n";
-    std::cin >> user.name;
+    std::getline(std::cin >> std:: ws, user.name);
     std::cout << "\n" << user.name << ", for what reason do you require our counsel?";
 
 
 
-}
-;
+};
