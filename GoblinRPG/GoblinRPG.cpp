@@ -1,14 +1,29 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
 #include <iomanip>
 #include <cstdlib>
 #include <ctime>
 
+struct Items {
+    std::string name;
+    std::string description;
+};
 
+struct Player {
+    std::string name;
+};
+
+struct NPC {
+    std::string name;
+    bool isAlive = true;
+};
 
 int main()
 {
+    Player user;
+
     std::cout << "WELCOME TO....\n" << " \n";
 
     std::cout << R"(
@@ -22,11 +37,12 @@ o888    88  o888   888o 888    888 888         888   8888o  88        888    888
 
     std::cin.get();
     system("cls");
-    std::cout << "Welcome initiate.";
+
+    std::cout << "Welcome, initiate. State thy name: \n \n";
+    std::cin >> user.name;
+    std::cout << "\n" << user.name << ", for what reason do you require our counsel?";
 
 
 
-
-   
 }
 ;
