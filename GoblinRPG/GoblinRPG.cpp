@@ -5,31 +5,28 @@
 #include <cstdlib>
 #include <ctime>
 
-using namespace std;so 
+
 
 int main()
 {
-    cout << "WELCOME TO....\n" << " \n";
+    std::cout << "WELCOME TO....\n" << " \n";
 
-    cout << R"(
-             888     888d8b         
-                888     888Y8P         
-                888     888            
- .d88b.  .d88b. 88888b. 88888888888b.  
-d88P"88bd88""88b888 "88b888888888 "88b 
-888  888888  888888  888888888888  888 
-Y88b 888Y88..88P888 d88P888888888  888 
- "Y88888 "Y88P" 88888P" 888888888  888 
-     888                               
-Y8b d88P                               
- "Y88P"                               )" << " \n" << " \n" << "Press ENTER to continue...";
+    std::cout << R"(
+  ooooooo8    ooooooo  oooooooooo ooooo       ooooo oooo   oooo      oooooooooo  oooooooooo    ooooooo8  
+o888    88  o888   888o 888    888 888         888   8888o  88        888    888  888    888 o888    88  
+888    oooo 888     888 888oooo88  888         888   88 888o88        888oooo88   888oooo88  888    oooo 
+888o    88  888o   o888 888    888 888      o  888   88   8888        888  88o    888        888o    88  
+ 888ooo888    88ooo88  o888ooo888 o888ooooo88 o888o o88o    88       o888o  88o8 o888o        888ooo888  
+                                                                                                         
+)"  << " \n" << " \n" << "Press ENTER to continue...";
 
-    cin.get();
+    std::cin.get();
     system("cls");
-    cout << "Welcome initiate.";
+    std::cout << "Welcome initiate.";
 
 
 
 
    
 }
+;
