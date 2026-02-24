@@ -5,7 +5,7 @@
 #include <cstdlib>
 #include <ctime>
 
-using namespace std;
+using namespace std;so 
 
 int main()
 {
