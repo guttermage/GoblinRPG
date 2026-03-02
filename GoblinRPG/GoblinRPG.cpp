@@ -30,11 +30,20 @@ struct Rooms {
 int main()
 {
     //Sets the opening scene
+    int choice;
     int currentRoom = 0;
 
     //Describes variables that were defined in the Rooms struct.
     std::vector<Rooms> dungeon = {
-        {"Birthing Pools", "Muddy, stinky, and loud. Welcome to life.",{1,2}}
+        {"Birthing Pools", "Muddy, stinky, and loud. Welcome to life.",{1,2}},
+        {"Room 1", "Room 1 Description", {3,4}},
+        {"Room 2", "Room 2 Description", {5,6}},
+        {"Room 3", "Room 3 Description", {7}},
+        {"Room 4", "Room 4 Description",{7}},
+        {"Room 5", "Room 5 Description", {8}},
+        {"Room 6", "Room 6 Description", {8}},
+        {"Room 7", "Room 7 Description", {9}},
+        {"Room 8", "Room 8 Description", {9}}
     };
 
     //Defines a "Player" variable named user so that we can call the name later.
@@ -75,14 +84,47 @@ o888    88  o888   888o 888    888 888         888   8888o  88        888    888
 
     std::cout << "Where will you go?\n\nChoose your path: \n";
         for (int pathID : dungeon[currentRoom].exits) {
-            std::cout << "Path " << pathID << " \n";
+            std::cout << "Path " << pathID << "\n";
         }
     std::cout << "\n";
 
-    int choice;
     std::cin >> choice;
 
     currentRoom = choice;
-    std::cout << "You have entered path  " << currentRoom;
+    std::cout << "\nYou have entered path " << currentRoom << "\n\n";
+
+    std::cout << "Where will you go?\n\nChoose your path: \n";
+    for (int pathID : dungeon[currentRoom].exits) {
+        std::cout << "Path " << pathID << " \n";
+    }
+    std::cout << "\n";
+
+    std::cin >> choice;
+
+    currentRoom = choice;
+    std::cout << "\nYou have entered path " << currentRoom << "\n\n";
+
+    std::cout << "Where will you go?\n\nChoose your path: \n";
+    for (int pathID : dungeon[currentRoom].exits) {
+        std::cout << "Path " << pathID << " \n";
+    }
+    std::cout << "\n";
+
+    std::cin >> choice;
+
+    currentRoom = choice;
+    std::cout << "\nYou have entered path " << currentRoom << "\n\n";
+
+    std::cout << "Where will you go?\n\nChoose your path: \n";
+    for (int pathID : dungeon[currentRoom].exits) {
+        std::cout << "Path " << pathID << " \n";
+    }
+    std::cout << "\n";
+
+    std::cin >> choice;
+
+    currentRoom = choice;
+    std::cout << "\nYou have entered path " << currentRoom << "\n\n";
+
 
 };
